@@ -1,0 +1,81 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.tabSize": 2,
+    "window.zoomLevel": 1,
+    "security.allowedUNCHosts": [
+        "borisch.local"
+    ],
+    "editor.wordWrap": "on",
+    "editor.inlineSuggest.enabled": false,
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "c:\\Users\\mrencher\\.vimrc-vscode",
+    "vim.useSystemClipboard": true,
+    "editor.lineNumbers": "relative",
+    "vim.handleKeys": {
+        "<C-p>": false
+    },
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<C-h>"],
+            "commands": ["workbench.action.focusLeftGroup"]
+        },
+        {
+            "before": ["<C-l>"],
+            "commands": ["workbench.action.focusRightGroup"]
+        },
+        {
+            "before": ["<C-k>"],
+            "commands": ["workbench.action.focusAboveGroup"]
+        },
+        {
+            "before": ["<C-j>"],
+            "commands": ["workbench.action.focusBelowGroup"]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<C-h>"],
+            "commands": ["workbench.action.focusLeftGroup"]
+        },
+        {
+            "before": ["<C-l>"],
+            "commands": ["workbench.action.focusRightGroup"]
+        },
+        {
+            "before": ["<C-k>"],
+            "commands": ["workbench.action.focusAboveGroup"]
+        },
+        {
+            "before": ["<C-j>"],
+            "commands": ["workbench.action.focusBelowGroup"]
+        }
+    ],
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            // SLIM
+            {
+                "scope": [
+                    "text.slim meta.tag entity.other.attribute-name.html",
+                ],
+                "settings": {
+                    "foreground": "#CCCCCC"
+                }
+            },
+            {
+                "scope": [
+                    "text.slim string.quoted.double.html meta.toc-list.id.html",
+                    "text.slim punctuation.definition.string",
+                    "text.slim string.quoted",
+                ],
+                "settings": {
+                    "foreground": "#98BB6C"
+                }
+            },
+        ]
+    },
+    "workbench.colorCustomizations": {
+        "editorBracketHighlight.foreground1": "#C586C0",
+        "editorBracketHighlight.foreground2": "#569CD6",
+        "editorBracketHighlight.foreground3": "#98BB6C",
+    },
+}
