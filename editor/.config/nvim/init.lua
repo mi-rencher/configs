@@ -19,6 +19,8 @@ vim.cmd("inoremap jk <esc>")
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.fileformats = { "unix", "dos" }
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
 vim.opt.swapfile = false
 
