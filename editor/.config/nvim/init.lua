@@ -31,9 +31,9 @@ vim.keymap.set('n', '<c-a>', ':Neotree filesystem reveal float<cr>')
 -- Control+s to save file and return to normal mode
 vim.keymap.set('n', '<c-s>', ':w<cr>')
 vim.keymap.set('i', '<c-s>', '<Esc>:w<cr>')
--- Control+q to save & quit file
-vim.keymap.set('n', '<c-q>', ':wq!<cr>')
-vim.keymap.set('i', '<c-q>', '<Esc>:wq!<cr>')
+-- Control+q to quit file without save
+vim.keymap.set('n', '<c-q>', ':q!<cr>')
+vim.keymap.set('i', '<c-q>', '<Esc>:q!<cr>')
 
 vim.keymap.set('n', '<leader>h', ':nohlsearch<cr>') -- space+h to clear find highlight text
 vim.keymap.set('n', 'B', '^') -- shift+b jump to beginning of line

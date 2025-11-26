@@ -23,7 +23,15 @@ else
     abbr -a lla 'ls -la'
 end
 
+# tmux bindings
 abbr -a tmls 'tmux list-sessions'
 abbr -a tmks 'tmux kill-session -t'
 abbr -a tmksv 'tmux kill-server'
 abbr -a tmn 'tmux new -s'
+
+# `jk` normal mode
+bind -M insert jk "if commandline -P; commandline -f cancel; else; set fish_bind_mode default; commandline -f repaint; end"
+
+# autosuggestions
+bind -M insert jf forward-word
+bind -M insert jg accept-autosuggestion
